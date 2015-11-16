@@ -1,12 +1,31 @@
-html, body, {
+body {
   margin: 0 !important;
   padding: 0 !important;
+  font-family: Lato !important;
+  background-color: black;
 }
 
-div.navbar.navbar-inverse.navbar-fixed-top {
+.navbar-inverse {
+  color: white;
   border-style: none;
   opacity: 0.7;
   background-color: black;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+}
+
+a#signup-link.pull-right {
+  color: black;
+}
+
+.dropdown-menu {
+  color: black;
 }
 
 .header-img {
@@ -24,12 +43,16 @@ div.navbar.navbar-inverse.navbar-fixed-top {
   padding-left: 200px;
   padding-right: 200px;
   position:absolute;
-  top:30%;
+  top: 30%;
   height:10em;
   margin-top:-5em;
 }
 
-
+a, a:hover{
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+}
 
 hr {
   width: 30%;
@@ -41,11 +64,10 @@ hr {
   border: white solid 1px;
   border-radius: 3%;
   padding: 4px;
+  font-size: 0.95em;
 }
 
-.backdrop {
-  background-color: white;
-  opacity: 0.4;
-  height: 100%;
-  width: 100%;
+footer, .text-muted {
+  background-color: black;
+  color: white;
 }
