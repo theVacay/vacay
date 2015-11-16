@@ -1,3 +1,51 @@
-body {
-  padding-top: 70px;  /* Move body of page below navbar. */
+html, body, {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+div.navbar.navbar-inverse.navbar-fixed-top {
+  border-style: none;
+  opacity: 0.7;
+  background-color: black;
+}
+
+.header-img {
+  height: 500px;
+  background-image: url('/images/Airplane.jpg');
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  overflow:hidden;
+  color: white;
+}
+
+
+.headerd {
+  padding-left: 200px;
+  padding-right: 200px;
+  position:absolute;
+  top:30%;
+  height:10em;
+  margin-top:-5em;
+}
+
+
+
+hr {
+  width: 30%;
+  border-color: white;
+}
+
+.button1 {
+  width: 15%;
+  border: white solid 1px;
+  border-radius: 3%;
+  padding: 4px;
+}
+
+.backdrop {
+  background-color: white;
+  opacity: 0.4;
+  height: 100%;
+  width: 100%;
 }
