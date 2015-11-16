@@ -6,7 +6,7 @@ Template.ListFlight.helpers({
   /**
    * @returns {*} All of the Stuff documents.
    */
-  stuffList: function () {
+  flightList: function () {
     return Flight.find();
   }
 });
