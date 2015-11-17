@@ -1,12 +1,13 @@
 /**
  * Created by chanelsantiago on 11/15/15.
  */
-Template.ListFlight.helpers({
+Template.ListHotel.helpers({
 
   /**
-   * @returns {*} All of the Stuff documents.
+   * @returns {*} All of the Hotel documents.
    */
-  flightList: function () {
-    return Flight.find();
+  hotelList: function () {
+    group=hotel;
+    return Hotel.find();
   }
 });

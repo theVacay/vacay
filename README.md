@@ -156,7 +156,7 @@ Routing is defined in [app/lib/router/Router.js](https://github.com/ics-software
 
 Routing is used for the Navbar links in [app/client/templates/application/Header.html](https://github.com/ics-software-engineering/meteor-application-template/blob/master/app/client/templates/application/Header.html).
 
-Routing is also used to jump to the List Stuff page after successful form submission in [app/client/templates/stuff/AddStuff.js](https://github.com/ics-software-engineering/meteor-application-template/blob/master/app/client/templates/stuff/AddStuff.js) and [app/client/templates/stuff/EditStuff.js](https://github.com/ics-software-engineering/meteor-application-template/blob/master/app/client/templates/stuff/EditStuff.js).
+Routing is also used to jump to the List Stuff page after successful form submission in [app/client/templates/stuff/AddDining.js](https://github.com/ics-software-engineering/meteor-application-template/blob/master/app/client/templates/stuff/AddDining.js) and [app/client/templates/stuff/EditDining.js](https://github.com/ics-software-engineering/meteor-application-template/blob/master/app/client/templates/stuff/EditDining.js).
 
 ### Forms
 

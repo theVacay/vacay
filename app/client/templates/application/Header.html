@@ -11,10 +11,9 @@
         <ul class="nav navbar-nav">
           <li><a href="{{ pathFor 'Home' }}">VACAY</a></li>
           {{#if currentUser}}
+          <li><a href="{{ pathFor 'Itinerary' }}">Itinerary</a></li>
           <li><a href="{{ pathFor 'AddFlight' }}">Add Flight</a></li>
-          <li><a href="{{ pathFor 'ListFlight' }}">List Flight</a></li>
           <li><a href="{{ pathFor 'AddHotel' }}">Add Hotel</a></li>
-          <li><a href="{{ pathFor 'ListHotel' }}">List Hotel</a></li>
           {{/if}}
         </ul>
         <ul class="nav navbar-nav navbar-right">
