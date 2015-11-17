@@ -119,5 +119,34 @@
     </table>
 
   </div>
+
+  <div class="well">
+
+    <table class="table">
+      <caption>Tours/Attractions Tickets</caption>
+      <thead>
+      <tr>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Event Name</th>
+        <th>Confirmation Number</th>
+        <th>Edit</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      {{#each attractionsList}}
+      <tr>
+        <td>{{date}}</td>
+        <td>{{time}}</td>
+        <td>{{event}}</td>
+        <td>{{confirmation}}</td>
+        <td><a style="color: slategrey" href="{{pathFor 'EditAttractions'}}">Edit</a></td>
+      </tr>
+      {{/each}}
+      </tbody>
+    </table>
+
+  </div>
   {{/IfLoggedIn}}
 </template>

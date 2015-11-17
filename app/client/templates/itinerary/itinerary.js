@@ -20,6 +20,10 @@ Template.Itinerary.helpers({
 
   diningList: function () {
     return Dining.find();
+  },
+
+  attractionsList: function () {
+    return Attractions.find();
   }
 
 });
