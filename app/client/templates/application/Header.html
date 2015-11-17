@@ -12,8 +12,17 @@
           <li><a href="{{ pathFor 'Home' }}">VACAY</a></li>
           {{#if currentUser}}
           <li><a href="{{ pathFor 'Itinerary' }}">Itinerary</a></li>
-          <li><a href="{{ pathFor 'AddFlight' }}">Add Flight</a></li>
-          <li><a href="{{ pathFor 'AddHotel' }}">Add Hotel</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Add Info
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ pathFor 'AddFlight' }}">Flight Reservations</a></li>
+              <li><a href="{{ pathFor 'AddHotel' }}">Hotel Reservations</a></li>
+              <li><a href="{{ pathFor 'AddCarRental' }}">Car Rental Reservations</a></li>
+              <li><a href="{{ pathFor 'AddDining' }}">Dining Reservations</a></li>
+            </ul>
+          </li>
+
           {{/if}}
         </ul>
         <ul class="nav navbar-nav navbar-right">

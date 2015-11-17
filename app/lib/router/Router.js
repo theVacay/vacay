@@ -28,6 +28,12 @@ Router.configure({
   loadingTemplate: 'Loading'
 });
 
+Router.configure({
+  layoutTemplate: 'Layout',
+  waitOn: function() { return Meteor.subscribe("CarRental"); },
+  loadingTemplate: 'Loading'
+});
+
 
 Router.route('/', {
   name: 'Home'
@@ -69,6 +75,14 @@ Router.route('/listdining', {
   name: 'ListDining'
 });
 
+Router.route('/addcarrental', {
+  name: 'AddCarRental'
+});
+
+Router.route('/listcarrental', {
+  name: 'ListCarRental'
+});
+
 
 Router.route('/stuff/:_id', {
   name: 'EditStuff',
@@ -88,4 +102,9 @@ Router.route('/hotel/:_id', {
 Router.route('/dining/:_id', {
   name: 'EditDining',
   data: function() { return Dining.findOne(this.params._id); }
+});
+
+Router.route('/carrental/:_id', {
+  name: 'EditCarRental',
+  data: function() { return CarRental.findOne(this.params._id); }
 });

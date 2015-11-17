@@ -4,20 +4,22 @@
 Template.Itinerary.helpers({
 
   /**
-   * @returns {*} All of the Hotel documents.
+   * @returns {*} All of the Itinerary documents.
    */
-  hotelList: function () {
-    group=hotel;
-    return Hotel.find();
-  },
-
   flightList: function () {
-    group=flight;
     return Flight.find();
   },
 
+  hotelList: function () {
+    return Hotel.find();
+  },
+
+  carrentalList: function () {
+    return CarRental.find();
+  },
+
   diningList: function () {
-    group=dining;
     return Dining.find();
   }
+
 });

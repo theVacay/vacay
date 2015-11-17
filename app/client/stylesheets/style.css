@@ -1,6 +1,9 @@
 body {
   margin: 0 !important;
-  padding: 0 !important;
+  padding-top: 65px !important;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   font-family: Lato !important;
   background-color: black;
 }
@@ -25,7 +28,8 @@ a#signup-link.pull-right {
 }
 
 .dropdown-menu {
-  color: black;
+  color: white;
+  background-color: black;
 }
 
 .header-img {

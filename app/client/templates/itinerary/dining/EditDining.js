@@ -1,16 +1,16 @@
 /**
- * After successful addition of a new Stuff document, go to List page.
+ * After successful edit, go to List page.
  * See: https://github.com/aldeed/meteor-autoform#callbackshooks
  */
 AutoForm.hooks({
-  AddDiningForm: {
+  EditDiningForm: {
     /**
-     * After successful form submission, go to the ListDining page.
+     * After successful form submission, go to the ListStuff page.
      * @param formType The form.
      * @param result The result of form submission.
      */
     onSuccess: function(formType, result) {
-      Router.go('ListDining');
+      Router.go('Itinerary');
     }
   }
 });

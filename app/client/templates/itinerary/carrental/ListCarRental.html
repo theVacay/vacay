@@ -1,0 +1,31 @@
+<template name="ListCarRental">
+  {{#IfLoggedIn}}
+    <div class="well">
+
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Pick-Up Date</th>
+          <th>Drop-Off Date</th>
+          <th>Rental Company</th>
+          <th>Confirmation Number</th>
+          <th>Edit</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        {{#each carrentalList}}
+          <tr>
+            <td>{{pickup}}</td>
+            <td>{{dropoff}}</td>
+            <td>{{company}}</td>
+            <td>{{confirmation}}</td>
+            <td><a href="{{pathFor 'EditCarRental'}}">Edit</a></td>
+          </tr>
+        {{/each}}
+        </tbody>
+      </table>
+
+    </div>
+  {{/IfLoggedIn}}
+</template>

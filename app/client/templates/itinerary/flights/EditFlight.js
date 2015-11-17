@@ -3,14 +3,14 @@
  * See: https://github.com/aldeed/meteor-autoform#callbackshooks
  */
 AutoForm.hooks({
-  EditDiningForm: {
+  EditFlightForm: {
     /**
-     * After successful form submission, go to the ListStuff page.
+     * After successful form submission, go to the ListFlight page.
      * @param formType The form.
      * @param result The result of form submission.
      */
     onSuccess: function(formType, result) {
-      Router.go('ListDining');
+      Router.go('Itinerary');
     }
   }
 });
