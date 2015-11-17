@@ -57,16 +57,8 @@ Router.route('/addflight', {
   name: 'AddFlight'
 });
 
-Router.route('/listflight', {
-  name: 'ListFlight'
-});
-
 Router.route('/addhotel', {
   name: 'AddHotel'
-});
-
-Router.route('/listhotel', {
-  name: 'ListHotel'
 });
 
 Router.route('/itinerary', {
@@ -77,24 +69,12 @@ Router.route('/adddining', {
   name: 'AddDining'
 });
 
-Router.route('/listdining', {
-  name: 'ListDining'
-});
-
 Router.route('/addcarrental', {
   name: 'AddCarRental'
 });
 
-Router.route('/listcarrental', {
-  name: 'ListCarRental'
-});
-
 Router.route('/addattractions', {
   name: 'AddAttractions'
-});
-
-Router.route('/listattractions', {
-  name: 'ListAttractions'
 });
 
 Router.route('/stuff/:_id', {
