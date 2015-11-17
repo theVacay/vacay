@@ -1,0 +1,31 @@
+<template name="ListHotel">
+  {{#IfLoggedIn}}
+  <div class="well">
+
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Arrival Date</th>
+        <th>Departure Date</th>
+        <th>Hotel Name</th>
+        <th>Confirmation Number</th>
+        <th>Edit</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      {{#each hotelList}}
+      <tr>
+        <td>{{arrivalDate}}</td>
+        <td>{{departureDate}}</td>
+        <td>{{hotelName}}</td>
+        <td>{{hotelcon}}</td>
+        <td><a href="{{pathFor 'EditHotel'}}">Edit</a></td>
+      </tr>
+      {{/each}}
+      </tbody>
+    </table>
+
+  </div>
+  {{/IfLoggedIn}}
+</template>

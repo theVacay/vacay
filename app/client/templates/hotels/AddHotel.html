@@ -1,0 +1,16 @@
+<template name="AddHotel">
+  {{#IfLoggedIn}}
+  <div class="well">
+    {{> quickForm
+    collection="Hotel"
+    template="bootstrap3-horizontal"
+    label-class="col-sm-2"
+    input-col-class="col-sm-10"
+
+    id="AddHotelForm"
+    type="method"
+    meteormethod="addHotel"
+    resetOnSuccess=true}}
+  </div>
+  {{/IfLoggedIn}}
+</template>

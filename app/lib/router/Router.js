@@ -16,6 +16,12 @@ Router.configure({
   loadingTemplate: 'Loading'
 });
 
+Router.configure({
+  layoutTemplate: 'Layout',
+  waitOn: function() { return Meteor.subscribe("Hotel"); },
+  loadingTemplate: 'Loading'
+});
+
 
 Router.route('/', {
   name: 'Home'
@@ -37,6 +43,14 @@ Router.route('/listflight', {
   name: 'ListFlight'
 });
 
+Router.route('/addhotel', {
+  name: 'AddHotel'
+});
+
+Router.route('/listhotel', {
+  name: 'ListHotel'
+});
+
 
 Router.route('/stuff/:_id', {
   name: 'EditStuff',
@@ -46,4 +60,9 @@ Router.route('/stuff/:_id', {
 Router.route('/flight/:_id', {
   name: 'EditFlight',
   data: function() { return Flight.findOne(this.params._id); }
+});
+
+Router.route('/hotel/:_id', {
+  name: 'EditHotel',
+  data: function() { return Hotel.findOne(this.params._id); }
 });

@@ -85,5 +85,14 @@ Flight.attachSchema(new SimpleSchema({
       group: flight,
       placeholder: ""
     }
+  },
+  confirmation: {
+    label: "Confirmation Number",
+    type: String,
+    optional: false,
+    autoform: {
+      group: flight,
+      placeholder: ""
+    }
   }
 }));

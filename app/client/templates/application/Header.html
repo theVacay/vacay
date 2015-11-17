@@ -11,10 +11,10 @@
         <ul class="nav navbar-nav">
           <li><a href="{{ pathFor 'Home' }}">VACAY</a></li>
           {{#if currentUser}}
-          <li><a href="{{ pathFor 'AddStuff' }}">Add Stuff</a></li>
-          <li><a href="{{ pathFor 'ListStuff' }}">List Stuff</a></li>
           <li><a href="{{ pathFor 'AddFlight' }}">Add Flight</a></li>
           <li><a href="{{ pathFor 'ListFlight' }}">List Flight</a></li>
+          <li><a href="{{ pathFor 'AddHotel' }}">Add Hotel</a></li>
+          <li><a href="{{ pathFor 'ListHotel' }}">List Hotel</a></li>
           {{/if}}
         </ul>
         <ul class="nav navbar-nav navbar-right">

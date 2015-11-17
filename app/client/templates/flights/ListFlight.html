@@ -10,6 +10,8 @@
         <th>Departure Time</th>
         <th>Arrival Airport</th>
         <th>Arrival Time</th>
+        <th>Confirmation Number</th>
+        <th>Edit</th>
       </tr>
       </thead>
 
@@ -21,6 +23,7 @@
         <td>{{dtime}}</td>
         <td>{{arrival}}</td>
         <td>{{atime}}</td>
+        <td>{{confirmation}}</td>
         <td><a href="{{pathFor 'EditFlight'}}">Edit</a></td>
       </tr>
       {{/each}}
