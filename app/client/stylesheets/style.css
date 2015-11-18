@@ -9,7 +9,6 @@ body {
 .navbar-inverse {
   color: white;
   border-style: none;
-  opacity: 0.7;
   background-color: black;
 }
 
@@ -25,28 +24,27 @@ a#signup-link.pull-right {
   color: black;
 }
 
+.navbar-nav > li > a {
+  padding: 0;
+  line-height: 45px !important;
+}
+
 .dropdown-menu {
   color: black;
 }
 
-.header-img {
-  height: 500px;
-  background-image: url('/images/Airplane.jpg');
-  background-size: cover;
-  position: relative;
+.header1 {
   text-align: center;
-  overflow:hidden;
-  color: white;
+  background-image: url('images/Airplane.jpg');
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
-
-.headerd {
-  padding-left: 200px;
-  padding-right: 200px;
-  position:absolute;
-  top: 30%;
-  height:10em;
-  margin-top:-5em;
+.himage {
+  width: 150px;
 }
 
 .options, .options:hover {
@@ -84,6 +82,18 @@ footer, .text-muted {
 
 }
 
+h1 {
+  color: white;
+}
+
 h2 {
   color: #EF6B39;
 }
+
+p {
+  color: white;
+}
+
+.logosmall {
+   height: 50px;
+ }
