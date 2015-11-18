@@ -1,7 +1,6 @@
 body {
   margin: 0 !important;
   padding-top: 0px !important;
-
   font-family: Lato !important;
   background-color: black;
 }
@@ -9,6 +8,7 @@ body {
 .navbar-inverse {
   color: white;
   border-style: none;
+  opacity: 0.6;
   background-color: black;
 }
 
@@ -37,7 +37,7 @@ a#signup-link.pull-right {
   text-align: center;
   background-image: url('images/Airplane.jpg');
   background-size: cover;
-  padding-top: 20px;
+  padding-top: 120px;
   padding-bottom: 30px;
   padding-left: 20%;
   padding-right: 20%;
@@ -95,5 +95,11 @@ p {
 }
 
 .logosmall {
-   height: 50px;
- }
+  height: 50px;
+  width: 50px;
+}
+
+.fill {
+  background-color: black;
+  height: 50px;
+}
