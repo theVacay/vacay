@@ -5,6 +5,13 @@ flight = "Flight";  // avoid typos, this string occurs many times.
 
 Flight = new Mongo.Collection(flight);
 
+Flight.allow({
+  update: function(userId, post) {
+    return ownsDocument(userId, post); },
+  remove: function(userId, post) {
+    return ownsDocument(userId, post); },
+});
+
 Meteor.methods({
   /**
    * Invoked by AutoForm to add a new Stuff record.
@@ -23,6 +30,10 @@ Meteor.methods({
   editFlight: function(flightdoc, flightdocID) {
     check(flightdoc, Flight.simpleSchema());
     Flight.update({_id: flightdocID}, flightdoc);
+  },
+
+  deleteFlight: function(flightdocID) {
+    Flight.remove({_id: flightdocID});
   }
 });
 
