@@ -1,39 +1,8 @@
-![](https://raw.githubusercontent.com/ics-software-engineering/meteor-application-template/master/doc/meteor-application-template-home.png)
-
-Meteor-application-template is a sample Meteor application that illustrates:
-
-  * A standard directory layout.
-  * A standard set of Meteor packages and example usage (Iron Router, AutoForm, Accounts, Bootstrap, etc.)
-  * Simple authorization/authentication and use of settings files for initialization.
-  * Simple quality assurance
-
-The goal of this template is to help you get quickly started doing Meteor development by providing a reasonable directory structure for development and deployment, a set of common extensions to the core framework, and boilerplate code to illustrate simple and common application capabilities.
+## Vacay
 
 ## Usage
 
-First, [install Meteor](https://www.meteor.com/install).
-
-Second, [create a new GitHub repository](https://help.github.com/articles/create-a-repo/), and clone it into your local workspace.
-
-Third, change directories into your local repo directory, and type the following:
-
-```
-% git remote add template https://github.com/ics-software-engineering/meteor-application-template.git
-% git fetch template
-% git merge -m "merge template into master" template/master
-```
-
-Git may report a merge conflict due to your README.md differing from the template:
-
-```
-Auto-merging README.md
-CONFLICT (add/add): Merge conflict in README.md
-Automatic merge failed; fix conflicts and then commit the result.
-```
-
-If this happens, just edit your README.md to reflect the contents appropriate to your app prior to your first commit.
-
-Now your local repo should contain the template. To test that everything is OK, cd into the app directory and run the application:
+Cd into the app directory and run the application:
 
 ```
 % meteor --settings ../config/settings.development.json
