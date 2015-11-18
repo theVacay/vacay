@@ -1,9 +1,9 @@
 <template name="Itinerary">
   {{#IfLoggedIn}}
-  <div class="well" style="padding-top: 65px">
+  <div class="well" tyle="padding-top: 65px">
+    <h2>FLIGHT</h2>
 
     <table class="table">
-      <caption>Flight Reservations</caption>
       <thead>
       <tr>
         <th>Flight Number</th>
@@ -12,7 +12,6 @@
         <th>Arrival Airport</th>
         <th>Arrival Time</th>
         <th>Confirmation Number</th>
-        <th>Edit</th>
       </tr>
       </thead>
 
@@ -25,7 +24,8 @@
         <td>{{arrival}}</td>
         <td>{{atime}}</td>
         <td>{{confirmation}}</td>
-        <td><a style="color: slategrey" href="{{pathFor 'EditFlight'}}">Edit</a></td>
+        <td><a class="options" href="{{pathFor 'EditFlight'}}">Edit</a></td>
+        <td><a class="options deleteflight" href="#">Delete</a></td>
       </tr>
       {{/each}}
       </tbody>
@@ -34,9 +34,9 @@
   </div>
 
   <div class="well">
+    <h2>HOTEL</h2>
 
     <table class="table">
-      <caption>Hotel Reservations</caption>
       <thead>
       <tr>
         <th>Arrival Date</th>
@@ -63,9 +63,9 @@
   </div>
 
   <div class="well">
+    <h2>CAR RENTAL</h2>
 
     <table class="table">
-      <caption>Car Rental Reservations</caption>
       <thead>
       <tr>
         <th>Pick-Up Date</th>
@@ -92,9 +92,9 @@
   </div>
 
   <div class="well">
+    <h2>DINING</h2>
 
     <table class="table">
-      <caption>Dining Reservations</caption>
       <thead>
       <tr>
         <th>Date</th>

@@ -27,3 +27,16 @@ Template.Itinerary.helpers({
   }
 
 });
+
+Template.Itinerary.events({
+  'click .deleteflight': function(e) {
+    e.preventDefault();
+
+    if (confirm("Delete this post?")) {
+      var currentPostId = this._id;
+      Meteor.call("deleteFlight", currentPostId);
+      Router.go('Itinerary');
+
+    }
+  }
+});
