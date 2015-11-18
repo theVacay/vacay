@@ -1,3 +1,105 @@
 body {
-  padding-top: 70px;  /* Move body of page below navbar. */
+  margin: 0 !important;
+  padding-top: 0px !important;
+  font-family: Lato !important;
+  background-color: black;
+}
+
+.navbar-inverse {
+  color: white;
+  border-style: none;
+  opacity: 0.6;
+  background-color: black;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+}
+
+a#signup-link.pull-right {
+  color: black;
+}
+
+.navbar-nav > li > a {
+  padding: 0;
+  line-height: 45px !important;
+}
+
+.dropdown-menu {
+  color: black;
+}
+
+.header1 {
+  text-align: center;
+  background-image: url('images/Airplane.jpg');
+  background-size: cover;
+  padding-top: 120px;
+  padding-bottom: 30px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.himage {
+  width: 150px;
+}
+
+.options, .options:hover {
+  color: #EF6B39;
+}
+
+a, a:hover{
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+}
+
+hr {
+  width: 30%;
+  border-color: white;
+}
+
+.button1 {
+  width: 15%;
+  border: white solid 1px;
+  border-radius: 3%;
+  padding: 4px;
+  font-size: 0.95em;
+}
+
+footer, .text-muted {
+  background-color: black;
+  color: white;
+}
+
+.well {
+  margin: 10px;
+  padding: 0 10px 0 10px;
+  text-align: center;
+
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: #EF6B39;
+}
+
+p {
+  color: white;
+}
+
+.logosmall {
+  height: 50px;
+  width: 50px;
+}
+
+.fill {
+  background-color: black;
+  height: 50px;
 }

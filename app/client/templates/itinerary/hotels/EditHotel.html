@@ -1,0 +1,17 @@
+<template name="EditHotel">
+  {{#IfLoggedIn}}
+  <div class="well" style="padding-top: 65px">
+    {{> quickForm
+    collection="Hotel"
+    template="bootstrap3-horizontal"
+    label-class="col-sm-2"
+    input-col-class="col-sm-10"
+
+    id="EditHotelForm"
+    type="method-update"
+    meteormethod="editHotel"
+    doc=this
+    buttonContent="Update"}}
+  </div>
+  {{/IfLoggedIn}}
+</template>
