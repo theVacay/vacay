@@ -8,12 +8,7 @@ body {
 .navbar-inverse {
   color: white;
   border-style: none;
-  opacity: 0.6;
-  background-color: black;
-}
-
-.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -24,13 +19,22 @@ a#signup-link.pull-right {
   color: black;
 }
 
+.nav .open > a, .nav .open > a:hover {
+  background-color: transparent;
+}
+
 .navbar-nav > li > a {
   padding: 0;
   line-height: 45px !important;
 }
 
-.dropdown-menu {
+.dropdown-menu > li > a {
   color: black;
+}
+
+.btn-primary, .btn-primary:hover {
+  background-color: black;
+  border: none;
 }
 
 .header1 {
@@ -38,7 +42,7 @@ a#signup-link.pull-right {
   background-image: url('images/Airplane.jpg');
   background-size: cover;
   padding-top: 120px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   padding-left: 20%;
   padding-right: 20%;
 }
@@ -101,5 +105,5 @@ p {
 
 .fill {
   background-color: black;
-  height: 50px;
+  height: 60px;
 }
