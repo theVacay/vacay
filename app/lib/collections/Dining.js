@@ -23,6 +23,10 @@ Meteor.methods({
   editDining: function(diningdoc, diningdocID) {
     check(diningdoc, Dining.simpleSchema());
     Dining.update({_id: diningdocID}, diningdoc);
+  },
+
+  deleteDining: function(diningdocID) {
+    Dining.remove({_id: diningdocID});
   }
 });
 

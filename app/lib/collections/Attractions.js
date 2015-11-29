@@ -23,6 +23,10 @@ Meteor.methods({
   editAttractions: function(attractionsdoc, attractionsdocID) {
     check(attractionsdoc, Attractions.simpleSchema());
     Attractions.update({_id: attractionsdocID}, attractionsdoc);
+  },
+
+  deleteAttractions: function(attractionsdocID) {
+    Attractions.remove({_id: attractionsdocID});
   }
 });
 

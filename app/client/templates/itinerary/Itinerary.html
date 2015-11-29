@@ -13,6 +13,8 @@
         <th>Arrival Airport</th>
         <th>Arrival Time</th>
         <th>Confirmation Number</th>
+        <th></th>
+        <th></th>
       </tr>
       </thead>
 
@@ -44,7 +46,8 @@
         <th>Departure Date</th>
         <th>Hotel Name</th>
         <th>Confirmation Number</th>
-        <th>Edit</th>
+        <th></th>
+        <th></th>
       </tr>
       </thead>
 
@@ -55,7 +58,8 @@
         <td>{{departureDate}}</td>
         <td>{{hotelName}}</td>
         <td>{{hotelcon}}</td>
-        <td><a style="color: slategrey" href="{{pathFor 'EditHotel'}}">Edit</a></td>
+        <td><a class="options" href="{{pathFor 'EditHotel'}}">Edit</a></td>
+        <td><a class="options deletehotel" href="#">Delete</a></td>
       </tr>
       {{/each}}
       </tbody>
@@ -73,7 +77,8 @@
         <th>Drop-Off Date</th>
         <th>Rental Company</th>
         <th>Confirmation Number</th>
-        <th>Edit</th>
+        <th></th>
+        <th></th>
       </tr>
       </thead>
 
@@ -84,7 +89,8 @@
         <td>{{dropoff}}</td>
         <td>{{company}}</td>
         <td>{{confirmation}}</td>
-        <td><a style="color: slategrey" href="{{pathFor 'EditCarRental'}}">Edit</a></td>
+        <td><a class="options" href="{{pathFor 'EditCarRental'}}">Edit</a></td>
+        <td><a class="options deletecarrental" href="#">Delete</a></td>
       </tr>
       {{/each}}
       </tbody>
@@ -102,7 +108,8 @@
         <th>Time</th>
         <th>Restaurant</th>
         <th>Confirmation</th>
-        <th>Edit</th>
+        <th></th>
+        <th></th>
       </tr>
       </thead>
 
@@ -113,7 +120,8 @@
         <td>{{time}}</td>
         <td>{{restaurant}}</td>
         <td>{{confirmation}}</td>
-        <td><a style="color: slategrey" href="{{pathFor 'EditDining'}}">Edit</a></td>
+        <td><a class="options" href="{{pathFor 'EditDining'}}">Edit</a></td>
+        <td><a class="options deletedining" href="#">Delete</a></td>
       </tr>
       {{/each}}
       </tbody>
@@ -131,7 +139,8 @@
         <th>Time</th>
         <th>Event Name</th>
         <th>Confirmation Number</th>
-        <th>Edit</th>
+        <th></th>
+        <th></th>
       </tr>
       </thead>
 
@@ -142,7 +151,8 @@
         <td>{{time}}</td>
         <td>{{event}}</td>
         <td>{{confirmation}}</td>
-        <td><a style="color: slategrey" href="{{pathFor 'EditAttractions'}}">Edit</a></td>
+        <td><a class="options" href="{{pathFor 'EditAttractions'}}">Edit</a></td>
+        <td><a class="options deleteattractions" href="#">Delete</a></td>
       </tr>
       {{/each}}
       </tbody>

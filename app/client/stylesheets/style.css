@@ -1,14 +1,14 @@
 body {
   margin: 0 !important;
-  padding-top: 0px !important;
+  padding-top: 0 !important;
   font-family: Lato !important;
-  background-color: black;
+  background-color: white;
 }
 
 .navbar-inverse {
   color: white;
   border-style: none;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -39,6 +39,7 @@ a#signup-link.pull-right {
 
 .header1 {
   text-align: center;
+  height: 753px;
   background-image: url('images/Airplane.jpg');
   background-size: cover;
   padding-top: 120px;
@@ -48,7 +49,7 @@ a#signup-link.pull-right {
 }
 
 .himage {
-  width: 150px;
+  width: 200px;
 }
 
 .options, .options:hover {
@@ -69,7 +70,7 @@ hr {
 .button1 {
   width: 15%;
   border: white solid 1px;
-  border-radius: 3%;
+  border-radius: 3px;
   padding: 4px;
   font-size: 0.95em;
 }
@@ -83,19 +84,24 @@ footer, .text-muted {
   margin: 10px;
   padding: 0 10px 0 10px;
   text-align: center;
-
+  background-color: white;
+  border: solid 1px black;
 }
 
 h1 {
   color: white;
+  margin-bottom: 0px;
 }
 
-h2 {
-  color: #EF6B39;
+h3 {
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
 p {
   color: white;
+  font-size: 1em;
 }
 
 .logosmall {
@@ -107,3 +113,8 @@ p {
   background-color: black;
   height: 60px;
 }
+
+tr, td {
+  text-align: left;
+}
+

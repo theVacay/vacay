@@ -23,6 +23,10 @@ Meteor.methods({
   editHotel: function(hoteldoc, hoteldocID) {
     check(hoteldoc, Hotel.simpleSchema());
     Hotel.update({_id: hoteldocID}, hoteldoc);
+  },
+
+  deleteHotel: function(hoteldocID) {
+    Hotel.remove({_id: hoteldocID});
   }
 });
 

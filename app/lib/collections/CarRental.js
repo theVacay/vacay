@@ -23,6 +23,10 @@ Meteor.methods({
   editCarRental: function(carrentaldoc, carrentaldocID) {
     check(carrentaldoc, CarRental.simpleSchema());
     CarRental.update({_id: carrentaldocID}, carrentaldoc);
+  },
+
+  deleteCarRental: function(carrentaldocID) {
+    CarRental.remove({_id: carrentaldocID});
   }
 });
 
