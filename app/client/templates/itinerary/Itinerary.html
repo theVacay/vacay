@@ -41,128 +41,137 @@
 
   </div>
 
-  <div class="well">
-    <h2>HOTEL</h2>
+  <div class="row">
+    <div class="col-md-6 itlist" >
+      <div class="well">
+        <h2>HOTEL</h2>
 
-    <table class="table table-hover">
-      <thead>
-      <tr>
-        <th>Arrival Date</th>
-        <th>Departure Date</th>
-        <th>Hotel Name</th>
-        <th>Confirmation Number</th>
-        <th></th>
-        <th></th>
-      </tr>
-      </thead>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>Arrival Date</th>
+            <th>Departure Date</th>
+            <th>Hotel Name</th>
+            <th>Confirmation Number</th>
+            <th></th>
+            <th></th>
+          </tr>
+          </thead>
 
-      <tbody>
-      {{#each hotelList}}
-      <tr>
-        <td>{{arrivalDate}}</td>
-        <td>{{departureDate}}</td>
-        <td>{{hotelName}}</td>
-        <td>{{hotelcon}}</td>
-        <td><a class="options" href="{{pathFor 'EditHotel'}}">EDIT</a></td>
-        <td><a class="options deletehotel" href="#">DELETE</a></td>
-      </tr>
-      {{/each}}
-      </tbody>
-    </table>
+          <tbody>
+          {{#each hotelList}}
+          <tr>
+            <td>{{arrivalDate}}</td>
+            <td>{{departureDate}}</td>
+            <td>{{hotelName}}</td>
+            <td>{{hotelcon}}</td>
+            <td><a class="options" href="{{pathFor 'EditHotel'}}">EDIT</a></td>
+            <td><a class="options deletehotel" href="#">DELETE</a></td>
+          </tr>
+          {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
 
+    <div class="col-md-6 itlist">
+      <div class="well">
+        <h2>CAR RENTAL</h2>
+
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>Pick-Up Date</th>
+            <th>Drop-Off Date</th>
+            <th>Rental Company</th>
+            <th>Confirmation Number</th>
+            <th></th>
+            <th></th>
+          </tr>
+          </thead>
+
+          <tbody>
+          {{#each carrentalList}}
+          <tr>
+            <td>{{pickup}}</td>
+            <td>{{dropoff}}</td>
+            <td>{{company}}</td>
+            <td>{{confirmation}}</td>
+            <td><a class="options" href="{{pathFor 'EditCarRental'}}">EDIT</a></td>
+            <td><a class="options deletecarrental" href="#">DELETE</a></td>
+          </tr>
+          {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 
-  <div class="well">
-    <h2>CAR RENTAL</h2>
+  <div class="row">
+    <div class="col-md-6 itlist">
+      <div class="well">
+        <h2>DINING</h2>
 
-    <table class="table table-hover">
-      <thead>
-      <tr>
-        <th>Pick-Up Date</th>
-        <th>Drop-Off Date</th>
-        <th>Rental Company</th>
-        <th>Confirmation Number</th>
-        <th></th>
-        <th></th>
-      </tr>
-      </thead>
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Restaurant</th>
+            <th>Confirmation</th>
+            <th></th>
+            <th></th>
+          </tr>
+          </thead>
 
-      <tbody>
-      {{#each carrentalList}}
-      <tr>
-        <td>{{pickup}}</td>
-        <td>{{dropoff}}</td>
-        <td>{{company}}</td>
-        <td>{{confirmation}}</td>
-        <td><a class="options" href="{{pathFor 'EditCarRental'}}">EDIT</a></td>
-        <td><a class="options deletecarrental" href="#">DELETE</a></td>
-      </tr>
-      {{/each}}
-      </tbody>
-    </table>
+          <tbody>
+          {{#each diningList}}
+          <tr>
+            <td>{{date}}</td>
+            <td>{{time}}</td>
+            <td>{{restaurant}}</td>
+            <td>{{confirmation}}</td>
+            <td><a class="options" href="{{pathFor 'EditDining'}}">EDIT</a></td>
+            <td><a class="options deletedining" href="#">DELETE</a></td>
+          </tr>
+          {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
 
-  </div>
+    <div class="col-md-6 itlist">
+      <div class="well">
+        <h2>TOURS/ATTRACTIONS</h2>
+        <table class="table table-hover">
 
-  <div class="well">
-    <h2>DINING</h2>
+          <thead>
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Event Name</th>
+            <th>Confirmation Number</th>
+            <th></th>
+            <th></th>
+          </tr>
+          </thead>
 
-    <table class="table table-hover">
-      <thead>
-      <tr>
-        <th>Date</th>
-        <th>Time</th>
-        <th>Restaurant</th>
-        <th>Confirmation</th>
-        <th></th>
-        <th></th>
-      </tr>
-      </thead>
+          <tbody>
+          {{#each attractionsList}}
+          <tr>
+            <td>{{date}}</td>
+            <td>{{time}}</td>
+            <td>{{event}}</td>
+            <td>{{confirmation}}</td>
+            <td><a class="options" href="{{pathFor 'EditAttractions'}}">EDIT</a></td>
+            <td><a class="options deleteattractions" href="#">DELETE</a></td>
+          </tr>
+          {{/each}}
+          </tbody>
+        </table>
 
-      <tbody>
-      {{#each diningList}}
-      <tr>
-        <td>{{date}}</td>
-        <td>{{time}}</td>
-        <td>{{restaurant}}</td>
-        <td>{{confirmation}}</td>
-        <td><a class="options" href="{{pathFor 'EditDining'}}">EDIT</a></td>
-        <td><a class="options deletedining" href="#">DELETE</a></td>
-      </tr>
-      {{/each}}
-      </tbody>
-    </table>
-
-  </div>
-
-  <div class="well">
-    <h2>TOURS/ATTRACTIONS</h2>
-    <table class="table table-hover">
-
-      <thead>
-      <tr>
-        <th>Date</th>
-        <th>Time</th>
-        <th>Event Name</th>
-        <th>Confirmation Number</th>
-        <th></th>
-        <th></th>
-      </tr>
-      </thead>
-
-      <tbody>
-      {{#each attractionsList}}
-      <tr>
-        <td>{{date}}</td>
-        <td>{{time}}</td>
-        <td>{{event}}</td>
-        <td>{{confirmation}}</td>
-        <td><a class="options" href="{{pathFor 'EditAttractions'}}">EDIT</a></td>
-        <td><a class="options deleteattractions" href="#">DELETE</a></td>
-      </tr>
-      {{/each}}
-      </tbody>
-    </table>
-
-  </div>
+      </div>
+      </div>
+    </div>
   {{/IfLoggedIn}}
 </template>

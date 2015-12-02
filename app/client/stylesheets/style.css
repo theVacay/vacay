@@ -140,3 +140,12 @@ th {
 .description {
   text-align: center;
 }
+
+.row {
+  margin: 0 !important;
+}
+
+.itlist {
+  padding: 0;
+  margin: 0;
+}
