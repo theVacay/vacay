@@ -12,8 +12,8 @@
     </div>
   </div>
 
-  <div class="well">
-    <img class="itpic" src="images/airplane105.png">
+  <div class="well" style="overflow: auto;">
+    <img class="itpic" src="/images/airplane105.png">
     <h2 class="ittitle">Flight</h2>
 
     <table class="table table-hover">
@@ -51,7 +51,7 @@
   <div class="row">
     <div class="col-md-6 itlist" >
       <div class="well">
-        <img class="itpic" src="images/building255.png">
+        <img class="itpic" src="/images/building255.png">
         <h2 class="ittitle">Hotel</h2>
 
         <table class="table table-hover">
@@ -84,7 +84,7 @@
 
     <div class="col-md-6 itlist">
       <div class="well">
-        <img class="itpic" src="images/car189.png">
+        <img class="itpic" src="/images/car189.png">
         <h2 class="ittitle">Car Rental</h2>
 
         <table class="table table-hover">
@@ -102,8 +102,8 @@
           <tbody>
           {{#each carrentalList}}
           <tr>
-            <td>{{pickup}}</td>
-            <td>{{dropoff}}</td>
+            <td>{{formatDate pickup}}</td>
+            <td>{{formatDate dropoff}}</td>
             <td>{{company}}</td>
             <td>{{confirmation}}</td>
             <td><a class="options" href="{{pathFor 'EditCarRental'}}">EDIT</a></td>
@@ -119,7 +119,7 @@
   <div class="row">
     <div class="col-md-6 itlist">
       <div class="well">
-        <img class="itpic" src="images/restaurant26.png">
+        <img class="itpic" src="/images/restaurant26.png">
         <h2 class="ittitle">Dining</h2>
 
         <table class="table table-hover">
@@ -152,7 +152,7 @@
 
     <div class="col-md-6 itlist">
       <div class="well">
-        <img class="itpic" src="images/fireworks11.png">
+        <img class="itpic" src="/images/fireworks11.png">
         <h2 class="ittitle">Tours and Attractions</h2>
         <table class="table table-hover">
 
@@ -160,7 +160,7 @@
           <tr>
             <th>Date</th>
             <th>Time</th>
-            <th>Event Name</th>
+            <th>Event</th>
             <th>Confirmation Number</th>
             <th></th>
             <th></th>
@@ -170,8 +170,8 @@
           <tbody>
           {{#each attractionsList}}
           <tr>
-            <td>{{date}}</td>
-            <td>{{time}}</td>
+            <td>{{formatDate date}}</td>
+            <td>{{getAmFm starttime}} - {{getAmFm endtime}}</td>
             <td>{{event}}</td>
             <td>{{confirmation}}</td>
             <td><a class="options" href="{{pathFor 'EditAttractions'}}">EDIT</a></td>

@@ -24,6 +24,14 @@ Template.Itinerary.helpers({
 
   attractionsList: function () {
     return Attractions.find();
+  },
+
+  formatDate: function(date) {
+    return moment(date).format('L');
+  },
+
+  getAmFm: function(date) {
+    return date;
   }
 
 });

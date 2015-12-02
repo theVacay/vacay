@@ -46,20 +46,46 @@ if (Meteor.isServer) {
 CarRental.attachSchema(new SimpleSchema({
   pickup: {
     label: "Pick-Up Date",
+    type: Date,
+    optional: false,
+    autoform: {
+      group: carrental,
+      afFieldInput: {
+        type: "date"
+      }
+    }
+  },
+  pickuptime: {
+    label: "Pick-Up Time",
     type: String,
     optional: false,
     autoform: {
       group: carrental,
-      placeholder: ""
+      afFieldInput: {
+        type: "time"
+      }
     }
   },
   dropoff: {
     label: "Drop-off Date",
+    type: Date,
+    optional: false,
+    autoform: {
+      group: carrental,
+      afFieldInput: {
+        type: "date"
+      }
+    }
+  },
+  dropofftime: {
+    label: "Pick-Up Time",
     type: String,
     optional: false,
     autoform: {
       group: carrental,
-      placeholder: ""
+      afFieldInput: {
+        type: "time"
+      }
     }
   },
   company: {
@@ -74,7 +100,7 @@ CarRental.attachSchema(new SimpleSchema({
   confirmation: {
     label: "Confirmation Number",
     type: String,
-    optional: false,
+    optional: true,
     autoform: {
       group: carrental,
       placeholder: ""

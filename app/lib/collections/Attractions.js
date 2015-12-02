@@ -44,26 +44,30 @@ if (Meteor.isServer) {
  * See: https://github.com/aldeed/meteor-autoform#affieldinput
  */
 Attractions.attachSchema(new SimpleSchema({
-  date: {
-    label: "Date",
-    type: String,
+  startdate: {
+    label: "Start Date",
+    type: Date,
     optional: false,
     autoform: {
       group: attractions,
-      placeholder: ""
+      afFieldInput: {
+        type: "bootstrap-datetimepicker"
+      }
     }
   },
-  time: {
-    label: "Time",
-    type: String,
-    optional: true,
+  enddate: {
+    label: "End Date",
+    type: Date,
+    optional: false,
     autoform: {
       group: attractions,
-      placeholder: ""
+      afFieldInput: {
+        type: "bootstrap-datetimepicker"
+      }
     }
   },
   event: {
-    label: "Attraction Name",
+    label: "Attraction",
     type: String,
     optional: false,
     autoform: {
@@ -74,7 +78,7 @@ Attractions.attachSchema(new SimpleSchema({
   confirmation: {
     label: "Confirmation Number",
     type: String,
-    optional: false,
+    optional: true,
     autoform: {
       group: attractions,
       placeholder: ""

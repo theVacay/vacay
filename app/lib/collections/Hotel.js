@@ -48,10 +48,11 @@ Hotel.attachSchema(new SimpleSchema({
     label: "Arrival Date",
     type: String,
     optional: false,
-    max: 20,
     autoform: {
       group: hotel,
-      placeholder: ""
+      afFieldInput: {
+        type: "time"
+      }
     }
   },
   departureDate: {
@@ -60,7 +61,9 @@ Hotel.attachSchema(new SimpleSchema({
     optional: false,
     autoform: {
       group: hotel,
-      placeholder: ""
+      afFieldInput: {
+        type: "time"
+      }
     }
   },
   hotelName: {
@@ -75,7 +78,7 @@ Hotel.attachSchema(new SimpleSchema({
   hotelcon: {
     label: "Confirmation Number",
     type: String,
-    optional: false,
+    optional: true,
     autoform: {
       group: hotel,
       placeholder: ""
