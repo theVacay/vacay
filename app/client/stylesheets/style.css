@@ -7,8 +7,8 @@ body {
 
 .navbar-inverse {
   color: white;
-  border-style: none;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(16, 20, 63, 0.8);
+  border-bottom: 4px solid #F68340;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -40,7 +40,7 @@ a#signup-link.pull-right {
 .header1 {
   text-align: center;
   height: 753px;
-  background-image: url('images/Airplane.jpg');
+  background-image: url('images/airplane1.jpg');
   background-size: cover;
   padding-top: 120px;
   padding-bottom: 40px;
@@ -53,7 +53,11 @@ a#signup-link.pull-right {
 }
 
 .options, .options:hover {
-  color: #EF6B39;
+  font-size: 10px;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #F68340;
 }
 
 a, a:hover{
@@ -76,7 +80,7 @@ hr {
 }
 
 footer, .text-muted {
-  background-color: black;
+  background-color: #10143F;
   color: white;
 }
 
@@ -90,8 +94,9 @@ footer, .text-muted {
 
 h1 {
   color: white;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
+
 
 h3 {
   color: white;
@@ -110,7 +115,7 @@ p {
 }
 
 .fill {
-  background-color: black;
+  background-color: #10143F;
   height: 60px;
 }
 
@@ -118,3 +123,20 @@ tr, td {
   text-align: left;
 }
 
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: transparent;
+}
+
+th {
+  color: black;
+  border-bottom: 2px solid #F68340 !important;
+}
+
+.row > h2 {
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.description {
+  text-align: center;
+}
