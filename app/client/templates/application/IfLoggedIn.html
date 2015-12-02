@@ -5,12 +5,12 @@
     {{#if canShow}}
       {{> UI.contentBlock }}
     {{else}}
-      <div class="fill"></div>
-      <div class="noAccess" style="text-align: center">
-        <h1>You are not authorized to view this page.</h1>
-        <h2>Please login.</h2>
+      <div class="row header1">
+        <h3>You must be logged in to use this application.</h3>
+        <hr>
+        <a href="#" class="button1">ABOUT</a>
+        <a href="https://github.com/theVacay/vacay" class="button1">GITHUB</a>
       </div>
-
     {{/if}}
   {{/if}}
 </template>
