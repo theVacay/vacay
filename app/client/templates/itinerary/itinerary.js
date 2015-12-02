@@ -7,33 +7,32 @@ Template.Itinerary.helpers({
    * @returns {*} All of the Itinerary documents.
    */
   flightList: function () {
-    return Flight.find();
+    return Flight.find({}, {sort: {startdate: 1}});
   },
 
   hotelList: function () {
-    return Hotel.find();
+    return Hotel.find({}, {sort: {startdate: 1}});
   },
 
   carrentalList: function () {
-    return CarRental.find();
+    return CarRental.find({}, {sort: {startdate: 1}});
   },
 
   diningList: function () {
-    return Dining.find();
+    return Dining.find({}, {sort: {startdate: 1}});
   },
 
   attractionsList: function () {
-    return Attractions.find();
+    return Attractions.find({}, {sort: {startdate: 1}});
   },
 
   formatDate: function(date) {
     return moment(date).format('L');
   },
 
-  getAmFm: function(date) {
-    return date;
-  }
-
+  formatTime: function(date) {
+    return moment(date).format('h:mm A');
+  },
 });
 
 Template.Itinerary.events({

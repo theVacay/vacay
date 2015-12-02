@@ -70,13 +70,15 @@ Flight.attachSchema(new SimpleSchema({
       placeholder: ""
     }
   },
-  dtime: {
+  startdate: {
     label: "Departure Time",
-    type: String,
+    type: Date,
     optional: false,
     autoform: {
       group: flight,
-      placeholder: ""
+      afFieldInput: {
+        type: "bootstrap-datetimepicker"
+      }
     }
   },
   arrival: {
@@ -88,19 +90,21 @@ Flight.attachSchema(new SimpleSchema({
       placeholder: ""
     }
   },
-  atime: {
+  enddate: {
     label: "Arrival Time",
-    type: String,
+    type: Date,
     optional: false,
     autoform: {
       group: flight,
-      placeholder: ""
+      afFieldInput: {
+        type: "bootstrap-datetimepicker"
+      }
     }
   },
   confirmation: {
     label: "Confirmation Number",
     type: String,
-    optional: false,
+    optional: true,
     autoform: {
       group: flight,
       placeholder: ""

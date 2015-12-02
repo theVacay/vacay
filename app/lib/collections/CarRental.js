@@ -44,47 +44,25 @@ if (Meteor.isServer) {
  * See: https://github.com/aldeed/meteor-autoform#affieldinput
  */
 CarRental.attachSchema(new SimpleSchema({
-  pickup: {
+  startdate: {
     label: "Pick-Up Date",
     type: Date,
     optional: false,
     autoform: {
       group: carrental,
       afFieldInput: {
-        type: "date"
+        type: "bootstrap-datetimepicker"
       }
     }
   },
-  pickuptime: {
-    label: "Pick-Up Time",
-    type: String,
-    optional: false,
-    autoform: {
-      group: carrental,
-      afFieldInput: {
-        type: "time"
-      }
-    }
-  },
-  dropoff: {
-    label: "Drop-off Date",
+  enddate: {
+    label: "Drop-Off Date",
     type: Date,
     optional: false,
     autoform: {
       group: carrental,
       afFieldInput: {
-        type: "date"
-      }
-    }
-  },
-  dropofftime: {
-    label: "Pick-Up Time",
-    type: String,
-    optional: false,
-    autoform: {
-      group: carrental,
-      afFieldInput: {
-        type: "time"
+        type: "bootstrap-datetimepicker"
       }
     }
   },

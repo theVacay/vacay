@@ -44,23 +44,15 @@ if (Meteor.isServer) {
  * See: https://github.com/aldeed/meteor-autoform#affieldinput
  */
 Dining.attachSchema(new SimpleSchema({
-  date: {
-    label: "Date",
-    type: String,
-    optional: false,
-    max: 20,
-    autoform: {
-      group: dining,
-      placeholder: ""
-    }
-  },
-  time: {
-    label: "Time",
-    type: String,
+  startdate: {
+    label: "Start Date",
+    type: Date,
     optional: false,
     autoform: {
       group: dining,
-      placeholder: ""
+      afFieldInput: {
+        type: "bootstrap-datetimepicker"
+      }
     }
   },
   restaurant: {
@@ -75,7 +67,7 @@ Dining.attachSchema(new SimpleSchema({
   confirmation: {
     label: "Confirmation Number",
     type: String,
-    optional: false,
+    optional: true,
     autoform: {
       group: dining,
       placeholder: ""

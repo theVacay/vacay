@@ -35,9 +35,9 @@
       <tr>
         <td>{{flightnum}}</td>
         <td>{{departure}}</td>
-        <td>{{dtime}}</td>
+        <td> <strong>{{formatDate startdate}}</strong> <br> {{formatTime startdate}} </td>
         <td>{{arrival}}</td>
-        <td>{{atime}}</td>
+        <td> <strong>{{formatDate enddate}}</strong> <br> {{formatTime enddate}} </td>
         <td>{{confirmation}}</td>
         <td><a class="options" href="{{pathFor 'EditFlight'}}">EDIT</a></td>
         <td><a class="options deleteflight" href="#">DELETE</a></td>
@@ -50,7 +50,7 @@
 
   <div class="row">
     <div class="col-md-6 itlist" >
-      <div class="well">
+      <div class="well" style="overflow: auto;">
         <img class="itpic" src="/images/building255.png">
         <h2 class="ittitle">Hotel</h2>
 
@@ -69,8 +69,8 @@
           <tbody>
           {{#each hotelList}}
           <tr>
-            <td>{{arrivalDate}}</td>
-            <td>{{departureDate}}</td>
+            <td> <strong>{{formatDate startdate}}</strong> <br> {{formatTime startdate}} </td>
+            <td> <strong>{{formatDate enddate}}</strong> <br> {{formatTime enddate}} </td>
             <td>{{hotelName}}</td>
             <td>{{hotelcon}}</td>
             <td><a class="options" href="{{pathFor 'EditHotel'}}">EDIT</a></td>
@@ -83,7 +83,7 @@
     </div>
 
     <div class="col-md-6 itlist">
-      <div class="well">
+      <div class="well" style="overflow: auto;">
         <img class="itpic" src="/images/car189.png">
         <h2 class="ittitle">Car Rental</h2>
 
@@ -102,8 +102,8 @@
           <tbody>
           {{#each carrentalList}}
           <tr>
-            <td>{{formatDate pickup}}</td>
-            <td>{{formatDate dropoff}}</td>
+            <td> <strong>{{formatDate startdate}}</strong> <br> {{formatTime startdate}} </td>
+            <td> <strong>{{formatDate enddate}}</strong> <br> {{formatTime enddate}} </td>
             <td>{{company}}</td>
             <td>{{confirmation}}</td>
             <td><a class="options" href="{{pathFor 'EditCarRental'}}">EDIT</a></td>
@@ -118,7 +118,7 @@
 
   <div class="row">
     <div class="col-md-6 itlist">
-      <div class="well">
+      <div class="well" style="overflow: auto;">
         <img class="itpic" src="/images/restaurant26.png">
         <h2 class="ittitle">Dining</h2>
 
@@ -126,7 +126,6 @@
           <thead>
           <tr>
             <th>Date</th>
-            <th>Time</th>
             <th>Restaurant</th>
             <th>Confirmation</th>
             <th></th>
@@ -137,8 +136,7 @@
           <tbody>
           {{#each diningList}}
           <tr>
-            <td>{{date}}</td>
-            <td>{{time}}</td>
+            <td> <strong>{{formatDate startdate}}</strong> <br> {{formatTime startdate}} </td>
             <td>{{restaurant}}</td>
             <td>{{confirmation}}</td>
             <td><a class="options" href="{{pathFor 'EditDining'}}">EDIT</a></td>
@@ -151,15 +149,15 @@
     </div>
 
     <div class="col-md-6 itlist">
-      <div class="well">
+      <div class="well" style="overflow: auto;">
         <img class="itpic" src="/images/fireworks11.png">
         <h2 class="ittitle">Tours and Attractions</h2>
         <table class="table table-hover">
 
           <thead>
           <tr>
-            <th>Date</th>
-            <th>Time</th>
+            <th>Start</th>
+            <th>End</th>
             <th>Event</th>
             <th>Confirmation Number</th>
             <th></th>
@@ -170,8 +168,8 @@
           <tbody>
           {{#each attractionsList}}
           <tr>
-            <td>{{formatDate date}}</td>
-            <td>{{getAmFm starttime}} - {{getAmFm endtime}}</td>
+            <td> <strong>{{formatDate startdate}}</strong> <br> {{formatTime startdate}} </td>
+            <td> <strong>{{formatDate enddate}}</strong> <br> {{formatTime enddate}} </td>
             <td>{{event}}</td>
             <td>{{confirmation}}</td>
             <td><a class="options" href="{{pathFor 'EditAttractions'}}">EDIT</a></td>

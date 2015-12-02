@@ -44,25 +44,25 @@ if (Meteor.isServer) {
  * See: https://github.com/aldeed/meteor-autoform#affieldinput
  */
 Hotel.attachSchema(new SimpleSchema({
-  arrivalDate: {
-    label: "Arrival Date",
-    type: String,
+  startdate: {
+    label: "Arrival",
+    type: Date,
     optional: false,
     autoform: {
       group: hotel,
       afFieldInput: {
-        type: "time"
+        type: "bootstrap-datetimepicker"
       }
     }
   },
-  departureDate: {
-    label: "Departure Date",
-    type: String,
+  enddate: {
+    label: "Departure",
+    type: Date,
     optional: false,
     autoform: {
       group: hotel,
       afFieldInput: {
-        type: "time"
+        type: "bootstrap-datetimepicker"
       }
     }
   },
