@@ -191,6 +191,7 @@ p.text-center.text-muted {
 }
 
 .featureimg {
+  margin-top: 10px;
   border-radius: 100%;
   width: 200px;
   margin-bottom:10px;
@@ -202,8 +203,12 @@ p.text-center.text-muted {
 
 .devbody {
   text-align: center;
-  padding: 10px 0 10px 0;
+}
 
-  background: #F68340; /* For browsers that do not support gradients */
-
+.guestlogin {
+  text-align: center;
+  border: solid 1px black;
+  border-radius: 7px;
+  margin: auto;
+  width: 200px
 }
