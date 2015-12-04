@@ -45,6 +45,10 @@ Router.route('/', {
   name: 'Home'
 });
 
+Router.route('/about', {
+  name: 'About'
+});
+
 Router.route('/list', {
   name: 'ListStuff'
 });
