@@ -203,6 +203,7 @@ p.text-center.text-muted {
 
 .devbody {
   text-align: center;
+  background-color: #F68340;
 }
 
 .guestlogin {
@@ -211,4 +212,37 @@ p.text-center.text-muted {
   border-radius: 7px;
   margin: auto;
   width: 200px
+}
+
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
+}
+
+.item {
+  background-image: url('/images/sunset.jpg');
+  background-size: cover;
+  height: 820px;
+  text-align: center;
+}
+
+.userheader {
+  line-height: 480px;
+  font-size: 40px;
+  padding: 0;
+  margin: 0 0 -210px 0;
+}
+
+.userbar {
+  margin-top: -90px;
+}
+
+.userdesc {
+  color: white;
+  font-size: 18px;
+  margin: 0;
+}
+
+.right.carousel-control, .left.carousel-control {
+  opacity: 0;
+  filter:alpha(opacity=0); /* IE support */
 }
