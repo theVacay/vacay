@@ -156,8 +156,7 @@
 
           <thead>
           <tr>
-            <th>Start</th>
-            <th>End</th>
+            <th>Date</th>
             <th>Event</th>
             <th>Confirmation Number</th>
             <th></th>
@@ -169,7 +168,6 @@
           {{#each attractionsList}}
           <tr>
             <td> <strong>{{formatDate startdate}}</strong> <br> {{formatTime startdate}} </td>
-            <td> <strong>{{formatDate enddate}}</strong> <br> {{formatTime enddate}} </td>
             <td>{{event}}</td>
             <td>{{confirmation}}</td>
             <td><a class="options" href="{{pathFor 'EditAttractions'}}">EDIT</a></td>

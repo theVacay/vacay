@@ -45,18 +45,7 @@ if (Meteor.isServer) {
  */
 Attractions.attachSchema(new SimpleSchema({
   startdate: {
-    label: "Start Date",
-    type: Date,
-    optional: false,
-    autoform: {
-      group: attractions,
-      afFieldInput: {
-        type: "bootstrap-datetimepicker"
-      }
-    }
-  },
-  enddate: {
-    label: "End Date",
+    label: "Date",
     type: Date,
     optional: false,
     autoform: {

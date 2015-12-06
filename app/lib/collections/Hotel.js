@@ -45,7 +45,7 @@ if (Meteor.isServer) {
  */
 Hotel.attachSchema(new SimpleSchema({
   startdate: {
-    label: "Arrival",
+    label: "Arrival Date",
     type: Date,
     optional: false,
     autoform: {
@@ -56,7 +56,7 @@ Hotel.attachSchema(new SimpleSchema({
     }
   },
   enddate: {
-    label: "Departure",
+    label: "Departure Date",
     type: Date,
     optional: false,
     autoform: {

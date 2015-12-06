@@ -45,7 +45,7 @@ if (Meteor.isServer) {
  */
 Dining.attachSchema(new SimpleSchema({
   startdate: {
-    label: "Start Date",
+    label: "Date",
     type: Date,
     optional: false,
     autoform: {
