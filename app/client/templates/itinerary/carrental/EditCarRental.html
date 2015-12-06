@@ -1,18 +1,24 @@
 <template name="EditCarRental">
   {{#IfLoggedIn}}
-  <div class="fill"></div>
-    <div class="well">
-      {{> quickForm
-      collection="CarRental"
-      template="bootstrap3-horizontal"
-      label-class="col-sm-2"
-      input-col-class="col-sm-10"
+  <div class="row addedit">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 addeditkeep">
+      <h1 class="addeditheader">EDIT CAR RENTAL</h1>
+      <div class="well addeditwell">
+        {{> quickForm
+        collection="CarRental"
+        template="bootstrap3-horizontal"
+        label-class="col-sm-2"
+        input-col-class="col-sm-10"
 
-      id="EditCarRentalForm"
-      type="method-update"
-      meteormethod="editCarRental"
-      doc=this
-      buttonContent="Update"}}
+        id="EditCarRentalForm"
+        type="method-update"
+        meteormethod="editCarRental"
+        doc=this
+        buttonContent="Update"}}
+      </div>
     </div>
+    <div class="col-md-2"></div>
+  </div>
   {{/IfLoggedIn}}
 </template>
