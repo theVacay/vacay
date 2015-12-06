@@ -1,17 +1,23 @@
 <template name="AddDining">
   {{#IfLoggedIn}}
-  <div class="fill"></div>
-    <div class="well">
-      {{> quickForm
-      collection="Dining"
-      template="bootstrap3-horizontal"
-      label-class="col-sm-2"
-      input-col-class="col-sm-10"
+  <div class="row addedit">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 addeditkeep">
+      <h1 class="addeditheader">ADD DINING</h1>
+      <div class="well addeditwell">
+        {{> quickForm
+        collection="Dining"
+        template="bootstrap3-horizontal"
+        label-class="col-sm-2"
+        input-col-class="col-sm-10"
 
-      id="AddDiningForm"
-      type="method"
-      meteormethod="addDining"
-      resetOnSuccess=true}}
+        id="AddDiningForm"
+        type="method"
+        meteormethod="addDining"
+        resetOnSuccess=true}}
+      </div>
     </div>
+    <div class="col-md-2"></div>
+  </div>
   {{/IfLoggedIn}}
 </template>

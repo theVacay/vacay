@@ -19,7 +19,12 @@ Meteor.methods({
    */
   addFlight: function(flightdoc) {
     check(flightdoc, Flight.simpleSchema());
+    if (Flight.find({startdate: flightdoc.startdate})) {
+      alert("There is already a flight at this time!");
+    }
+    else {
     Flight.insert(flightdoc);
+    }
   },
   /**
    *

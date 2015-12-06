@@ -246,3 +246,49 @@ p.text-center.text-muted {
   opacity: 0;
   filter:alpha(opacity=0); /* IE support */
 }
+
+legend.af-fieldGroup-heading {
+  display: none;
+}
+
+.form-horizontal {
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+}
+
+button.btn.btn-primary, button.btn.btn-primary:hover, button.btn.btn-primary:focus {
+  background-color:  #0C103B;
+}
+
+.addedit {
+  background-image: url('/images/airplane1.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  display: inline-flex;
+}
+
+.addeditwell {
+  background-color: rgba(250, 250, 250, 0.96);
+  padding-bottom: 5px;
+  border-top: 5px solid #F68340;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.addeditheader {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.addeditkeep {
+  margin: auto;
+}
