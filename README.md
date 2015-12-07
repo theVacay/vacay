@@ -1,4 +1,7 @@
 ## Vacay
+
+![alt tag](https://github.com/theVacay/vacay/blob/master/doc/homepage.png?raw=true)
+
 Vacay is a web application created by Information and Computer Science (ICS) students from [University of Hawaii at Manoa](https://www.hawaii.edu).  We were tasked to demonstrate our understanding of a responsive web site by using the skills we have developed throughout a web programming course.
 
 The following application is run through [Meteor](https://www.meteor.com), a JavaScript application platform built to design and create websites with ease.  Within two weeks, we have created a website that implements many databases that holds reservations for the user such as: flights, hotels, car rentals, and other activities.
