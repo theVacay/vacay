@@ -19,17 +19,20 @@ If all goes well, the template application will appear at [http://localhost:3000
 ## Technology Used
 Meteor
 
-  Iron:Router
+Iron:Router
+
+Bootstrap
   
-  Bootstrap
+Accounts-Password
   
-  Accounts-Password
-  
-  Moment.js
+Moment.js
   
 HTML & CSS
 
 JavaScript
 
+# Credits
+
+Based upon the [meteor-application-template](http://ics-software-engineering.github.io/meteor-application-template/).
 
 
