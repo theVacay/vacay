@@ -16,7 +16,14 @@ Cd into the app directory and run the application:
 
 If all goes well, the template application will appear at [http://localhost:3000](http://localhost:3000).  You can login using the credentials in [settings.development.json](https://github.com/ics-software-engineering/meteor-application-template/blob/master/config/settings.development.json), or else register a new account.
 
-
+## Technology Used
+Meteor
+  Iron:Router
+  Bootstrap
+  Accounts-Password
+  Moment.js
+HTML & CSS
+JavaScript
 
 
 
